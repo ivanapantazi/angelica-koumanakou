@@ -1,9 +1,33 @@
-# Angelica koumanakou
+# GraphCMS ⨯ React.js
 
-### [Live Site](https://angelicakoumanakou.com)
+[Join our Slack](https://slack.graphcms.com)
 
-## Introduction
+This example demonstrates how to query from GraphCMS with `graphql-request` in React.js.
 
-This is a code repository for this website.
+• [Demo](https://graphcms-with-reactjs.now.sh)
 
-With featured and recent posts, categories. full markdown articles, author information, comments, and much more, this fully responsive CMS Blog App is the best Blog Application that you can currently find on YouTube. And what's best of all is that you and your clients can manage the blog from a dedicated Content Management System.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-reactjs) [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
+
+## How to Use
+
+### Download Manually
+
+```bash
+npx degit graphcms/graphcms-examples/with-reactjs with-reactjs
+```
+
+Install & Run:
+
+```bash
+cd with-react-js
+npm install
+npm run dev
+# or
+cd with-react-js
+yarn
+yarn dev
+```
+
+### Run on Codesandbox
+
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-reactjs)

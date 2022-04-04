@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Products from "./pages/Products";
 import Services from "./pages/Services";
+import Projects from "./pages/Projects";
 
 const App = () => (
   <Router>
@@ -22,6 +23,12 @@ const App = () => (
       <Switch>
         <Route path="/about">
           <About />
+        </Route>
+      </Switch>
+
+      <Switch>
+        <Route path="/projects">
+          <Projects />
         </Route>
       </Switch>
       <Switch>

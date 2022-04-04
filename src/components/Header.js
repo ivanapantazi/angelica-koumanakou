@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = ({ children }) => {
   return (
@@ -12,7 +13,9 @@ const Header = ({ children }) => {
         }}
       >
         <div>
-          <h1>Angelica Koumanakou</h1>
+          <h1>
+            <Link to="/">Angelica Koumanakou</Link>
+          </h1>
           <span>This is our website</span>
         </div>
         {children}

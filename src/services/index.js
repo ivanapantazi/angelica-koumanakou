@@ -102,3 +102,24 @@ export const getMenus = async () => {
 
   return menus;
 };
+
+export const getAllProjects = async () => {
+  const { projectLists } = await request(
+    graphqlAPI,
+    `
+        {
+          projectLists {
+            id
+            title
+            tags
+            url
+            projectThumbnail {
+              url
+            }
+          }
+        }
+      `
+  );
+
+  return projectLists;
+};

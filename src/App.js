@@ -27,7 +27,7 @@ const App = () => (
       </Switch>
 
       <Switch>
-        <Route path="/projects">
+        <Route path="/projects/all">
           <Projects />
         </Route>
       </Switch>

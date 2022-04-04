@@ -78,6 +78,26 @@ export const getServices = async () => {
             title
             intro
             description
+            serviceItem1
+            serviceItem2
+            serviceItem3
+            serviceItem4
+            serviceItem5
+            asset1 {
+              url
+            }
+            asset2 {
+              url
+            }
+            asset3 {
+              url
+            }
+            asset4 {
+              url
+            }
+            asset5 {
+              url
+            }
           }
         }
       `
@@ -103,23 +123,27 @@ export const getMenus = async () => {
   return menus;
 };
 
-export const getAllProjects = async () => {
-  const { projectLists } = await request(
+export const getProjectDetails = async () => {
+  const { projects } = await request(
     graphqlAPI,
-    `
-        {
-          projectLists {
-            id
-            title
-            tags
-            url
-            projectThumbnail {
-              url
-            }
-          }
+    `  
+    {
+      projects {
+        slug
+        softwareTags
+        tags
+        title
+        description
+        projectThumbnail {
+          url
         }
-      `
+        projectAssets {
+          url
+        }
+      }
+    }
+  `
   );
 
-  return projectLists;
+  return projects;
 };
